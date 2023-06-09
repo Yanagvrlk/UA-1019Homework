@@ -121,6 +121,20 @@ sizes.forEach((size) => {
 });
 
 
+function upperCase(str) {
+    if (str.match(/^[A-Z]/)) {
+      return "String starts with uppercase character";
+    } else {
+      return "String does not start with uppercase character";
+    }
+  }
+
+  function upperCase(str) {
+    if (str.match(/^[A-Z]/)) {
+        return "St"
+    }
+  }
+
 
 
 
