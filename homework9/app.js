@@ -24,10 +24,10 @@ $(document).ready(function () {
     const checkboxes = $("input[type='checkbox']");
     let checkedCount = 0;
 
-    checkboxes.on("change", function () {
+    checkboxes.on("click", function () {
         if ($(this).is(":checked")) {
             checkedCount++;
-            if (checkedCount >= 3) {
+            if (checkedCount == 3) {
                 checkboxes.prop("disabled", true);
             }
         }
